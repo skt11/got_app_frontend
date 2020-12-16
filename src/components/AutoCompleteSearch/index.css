@@ -8,10 +8,34 @@
     background-color: inherit;
     outline: none;
     color: white;
-    transition: 0.15s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
-.AutoCompleteSearch_input:focus{
-    border-bottom: .2rem solid #1a8a80;
+.AutoCompleteSearch_input:focus {
+    border-bottom: .25rem solid #1a8a80;
 }
 
+.AutoCompleteSearch_options_option {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    background-color: #1d212a;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    border-radius: .15rem;
+    transition: 0.15s ease-in;
+}
+
+.AutoCompleteSearch_options_option:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.AutoCompleteSearch_options_option:nth-child(odd) {
+    background-color: #31353b;
+}
+
+.AutoCompleteSearch_options_option a {
+    color: white;
+    padding: 1rem 1rem;
+    display: block;
+}
