@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import "./index.css";
 
 const AutoCompleteSearch = (props) => {
 
@@ -18,10 +21,17 @@ const AutoCompleteSearch = (props) => {
     return (
         <div className="AutoCompleteSearch">
             <input className="AutoCompleteSearch_input" type="text" placeholder="location" onChange={onChange} />
-            {options.length !== 0 ? options.map((option, i) => {
-                return (<div className="AutoCompleteSearch_input_option" key={i}>{option}</div>)
-            }) :
-                touched && text && <p>Not Found</p>}
+            {options.length !== 0 ?
+                <ul className="AutoCompleteSearch_options">{
+                    options.map((option, i) => {
+                        return (
+                            <li className="AutoCompleteSearch_options_option" key={i}>
+                                <NavLink to={`/battles/${option}`}>{option}</NavLink>
+                            </li>)
+                    })
+                }
+                </ul>
+                : touched && text && <p>Not Found</p>}
         </div>
     )
 }

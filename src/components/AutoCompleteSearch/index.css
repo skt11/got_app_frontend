@@ -1,0 +1,17 @@
+.AutoCompleteSearch_input {
+    width: 50%;
+    height: 2rem;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: .1rem solid #1a8a80;
+    background-color: inherit;
+    outline: none;
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.AutoCompleteSearch_input:focus{
+    border-bottom: .2rem solid #1a8a80;
+}
+

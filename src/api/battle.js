@@ -5,4 +5,12 @@ const getLocationList = async () => {
     return await axios.get(`${config.API_URL}/list`)
 }
 
-export { getLocationList }
+const searchBattle = async (query = {}) => {
+    return await axios.get(`${config.API_URL}/search`, {
+        params: {
+            ...query
+        }
+    })
+}
+
+export { getLocationList, searchBattle }

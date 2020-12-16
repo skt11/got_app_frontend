@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getLocationList } from "../../api/battle";
 import AutoCompleteSearch from "../../components/AutoCompleteSearch";
 
+import './index.css'
+
 const Home = () => {
     const [locationList, setLocationList] = useState([])
 
@@ -11,7 +13,7 @@ const Home = () => {
             setLocationList(data)
         }
         fetchData()
-    })
+    }, [])
 
     return (
         <div className="Home">
