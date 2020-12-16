@@ -1,9 +1,10 @@
 import React from 'react';
+import Home from '../pages/Home';
 
 const AppRouter = () => {
     return (
         <div className="App">
-            App
+            <Home />
         </div>)
 }
 
