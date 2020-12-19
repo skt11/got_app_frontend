@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-around;
     padding-top: 7rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     margin-top: -0.9rem;
 }
 
@@ -73,4 +75,122 @@
     background-color: rgba(255, 255, 255, 0.5);
     height: 2px;
     margin: auto;
+}
+
+.status_icon {
+    width: 2.5rem;
+    height: 100%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.Battle_Stats_bar {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 98%;
+    margin: auto;
+    background-color: #1d212a;
+    box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.5);
+}
+
+.Battle_Stats_bar_attacker_house, .Battle_Stats_bar_defender_house {
+    background-color: grey;
+}
+
+.Battle_Stats_bar_defender, .Battle_Stats_bar_attacker {
+    display: flex;
+}
+
+.Battle_Stats_bar_attacker_size_icon, .Battle_Stats_bar_defender_size_icon {
+    width: 2.5rem;
+    height: 100%;
+}
+
+.Battle_Stats_bar_attacker_size_num, .Battle_Stats_bar_defender_size_num {
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+}
+
+.Battle_Stats_bar_attacker_size_num {
+    padding-left: .4rem;
+}
+
+.Battle_Stats_bar_defender_size_num {
+    padding-right: .4rem;
+}
+
+.Battle_Stats_bar_attacker_size_icon {
+    padding-left: 1.5rem;
+}
+
+.Battle_Stats_bar_defender_size_icon {
+    padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    .Battle{
+        width: 70%;
+    }
+
+    .icon{
+        height: 5rem;
+        width: 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .Battle{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .Battle{
+        width: 95%;
+    }
+
+    .name{
+        font-size: 1rem;
+    }
+
+    .Battle_Stats_bar_attacker_size_icon, .Battle_Stats_bar_defender_size_icon{
+        width: 2rem;
+    }
+
+    .status_icon {
+        width: 1.8 rem;
+    }
+
+    .Battle_Stats_bar_attacker_size_num, .Battle_Stats_bar_defender_size_num{
+        font-size: 1rem;
+        padding-top: 1.3rem;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .Battle_Stats_bar_attacker_size_icon, .Battle_Stats_bar_defender_size_icon{
+        width: 1.5rem;
+    }
+
+    .Battle_Stats_bar_attacker_size_icon, .Battle_Stats_bar_attacker_size_num{
+        padding-left: 0.5rem;
+    }
+
+    .Battle_Stats_bar_defender_size_icon, .Battle_Stats_bar_defender_size_num{
+        padding-right: 0.5rem;
+    }
+
+    .status_icon {
+        width: 1.2rem;
+    }
+
+    .Battle_Stats_bar_attacker_size_num, .Battle_Stats_bar_defender_size_num{
+        font-size: 0.7rem;
+    }
 }
