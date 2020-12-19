@@ -1,0 +1,76 @@
+.Battle_Card {
+    background-image: url(../../assets/Battle_of_Basterds.png);
+    height: 27rem;
+    background-size: cover;
+    box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.5);
+}
+
+.Battle_Card_details {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7rem;
+    margin-top: -0.9rem;
+}
+
+.Battle {
+    margin: auto;
+    width: 55%;
+}
+
+.Battle_Tonights_text {
+    text-align: center;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.Battle_Title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.4rem;
+}
+
+.Battle_Card_details_VS_text {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.icon {
+    opacity: 1.5;
+    background-color: grey;
+    height: 8rem;
+    width: 8rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.Battle_Card_details_Attacker, .Battle_Card_details_Defender {
+    text-align: center;
+}
+
+.name {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 50px;
+    padding: 0.6rem;
+    letter-spacing: 0.4rem;
+}
+
+.desc {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 50px;
+    padding: 0.7rem
+}
+
+.Battle_Card_details .divider {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
+    margin: auto;
+}
