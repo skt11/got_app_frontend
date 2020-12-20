@@ -15,6 +15,10 @@
     border-bottom: .25rem solid #1a8a80;
 }
 
+.AutoCompleteSearch_options{
+    padding-bottom: 4rem;
+}
+
 .AutoCompleteSearch_options_option {
     margin: auto;
     width: 50%;
