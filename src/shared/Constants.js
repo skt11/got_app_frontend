@@ -3,7 +3,7 @@ const dev = {
 }
 
 const prod = {
-    API_URL: "https://got-battles-backend.herokuapp.com/"
+    API_URL: "https://got-battles-backend.herokuapp.com"
 }
 
 export default process.env.NODE_ENV === "production" ? prod : dev
