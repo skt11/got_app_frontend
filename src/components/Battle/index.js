@@ -9,7 +9,7 @@ const Battle = ({ battle }) => {
     console.log(battle)
     return (
         <div className="Battle">
-            <div className="Battle_Tonights_text">TONIGHT'S</div>
+            <div className="Battle_Tonights_text">BATTLE #{battle.battle_number} - YEAR {battle.year}</div>
             <div className="Battle_Title">{battle.name.toUpperCase()}</div>
             <div className="Battle_Card">
                 <div className="Battle_Card_details">
@@ -41,21 +41,21 @@ const Battle = ({ battle }) => {
                         alt="Attacker"
                         src={people_icon}></img>
                     <div className="Battle_Stats_bar_attacker_size_num">
-                        {battle.attacker_size || "--"}
+                        {battle.attacker_size || "-"}
                     </div>
                     <img className="Battle_Stats_bar_attacker_size_icon"
                         alt="Attacker"
                         src={skull_icon}></img>
                     <div className="Battle_Stats_bar_attacker_size_num">
-                        {battle.major_death || "--"}
+                        {battle.major_death || "-"}
                     </div>
                 </div>
                 <div className="Battle_Stats_bar_defender">
-                    <div className="Battle_Stats_bar_defender_size_num">{battle.major_capture || "--"}</div>
+                    <div className="Battle_Stats_bar_defender_size_num">{battle.major_capture || "-"}</div>
                     <img className="Battle_Stats_bar_defender_size_icon"
                         alt="Attacker"
                         src={skull_icon}></img>
-                    <div className="Battle_Stats_bar_defender_size_num">{battle.defender_size || "--"}</div>
+                    <div className="Battle_Stats_bar_defender_size_num">{battle.defender_size || "-"}</div>
                     <img className="Battle_Stats_bar_defender_size_icon"
                         alt="Attacker"
                         src={people_icon}></img>
@@ -63,6 +63,15 @@ const Battle = ({ battle }) => {
                         alt="Defender"
                         src={icon_maping[battle.defender_1]}></img>
                 </div>
+            </div>
+            <div className="Battle_Misc_info">
+                <div><span>Battle type: </span>{battle.battle_type}</div>
+                <div><span>Location: </span>{battle.location}</div>
+                <div><span>Region: </span>{battle.region}</div>
+                <div><span>Summer: </span>{battle.summer}</div>
+                <div><span>Attacker Commander: </span>{battle.attacker_commander}</div>
+                <div><span>Defender Commander: </span>{battle.defender_commander}</div>
+                <div><span>Note: </span>{battle.note}</div>
             </div>
         </div>
     )

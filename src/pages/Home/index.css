@@ -1,3 +1,32 @@
 .Home {
     text-align: center;
+    height: 600px;
+}
+
+.Home_title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    padding-bottom: 2rem;
+}
+
+.Home_desc {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 50px;
+    padding-bottom: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.credits{
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
 }
